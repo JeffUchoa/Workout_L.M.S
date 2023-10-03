@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px){
+    .navegador{
+        height: 40px;
+        background-color: rgb(127, 255, 195);
+        box-shadow: 0px 5px 0px;
+    }
+    .tudo{
+        display: flex;
+    }
+    .menuAcordeon{
+        width: 350px;
+        height: 800px;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 10px 10px 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .menuAcordeon .menulateraltitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 236, 127);
+        border: 2px solid rgb(0, 0, 0);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        height: 42%;
+    }
+    .menuAcordeon .section .titulo{
+        height: 40px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuAcordeon .section .conteudoc{
+        background-color: auto;
+        height: 0px;
+        overflow: hidden;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: height 400ms;
+    }
+    .menuAcordeon .section:hover .conteudoc{
+        height: 240px;
+    }
+    .menucelula1{
+        background-color: rgb(255, 127, 206);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula2{
+        background-color: rgb(127, 255, 195);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula3{
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula4{
+        background-color: rgb(255, 127, 127);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula5{
+        background-color: rgb(127, 140, 255); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .conteudo{
+        display: inline-flex;
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: rgb(246, 255, 127);
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 10px 10px 0px;
+        height: 800px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .linha1{
+        display: flex;
+        background-color: rgb(255, 185, 127);
+        min-height: 400px;
+        width: 100%;
+        
+    }
+    .celula1{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        width: 50%;
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .celula2{
+        display: flex;
+        height: auto;
+        width: 50%;
+        background-color: rgb(255, 127, 206);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .imagebox{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+    }
+    .imagebox .overlay{
+        background-color: rgba(0, 0, 0, 0.555);
+        color: aliceblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        opacity: 1;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagebox img{
+        display: block;
+        height: 350px;
+    }
+    .linha2{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        background-color: rgb(255, 127, 127);
+        height: 400px;
+        width: 100%;
+    }
+    .celula3{
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgb(127, 140, 255); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .celula4{
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgb(127, 255, 195);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .celula5{
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgb(255, 236, 127); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .caixa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+    .caixa-do-gato{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0);
+        box-shadow: 10px 10px 0px;
+        animation-name: cor;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        position: absolute;
+        transform: translate(200px, 200px);
+    }
+    .caixa-do-gato img{
+        height: 240px;
+    }
+
+    @keyframes cor{
+        0%{
+            background-color: rgb(255, 127, 127);
+            transform: translate(20px, 20px);
+        }
+        20%{
+            background-color: rgb(127, 140, 255);  
+        }
+        40%{
+            background-color: rgb(127, 255, 195);
+            transform: translate(calc(100vw - 420px), 20px);
+        }
+        80%{
+            background-color: rgb(255, 236, 127);
+        }
+        100%{
+            background-color: rgb(187, 127, 255);
+            transform: translate(20px, 20px);
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .navegador{
+        height: 40px;
+        background-color: rgb(127, 255, 195);
+        border: 3px solid rgb(0, 0, 0);
+    }
+    .tudo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menuAcordeon{
+        width: calc(100vw - 40px);
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 0, 0);
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .menuAcordeon .menulateraltitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 236, 127);
+        border: 2px solid rgb(0, 0, 0);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        height: 42%;
+    }
+    .menuAcordeon .section .titulo{
+        height: 40px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuAcordeon .section .conteudoc{
+        background-color: auto;
+        height: 0px;
+        overflow: hidden;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: large;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: height 400ms;
+    }
+    .menuAcordeon .section:hover .conteudoc{
+        height: 15px;
+    }
+    .menucelula1{
+        background-color: rgb(255, 127, 206);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula2{
+        background-color: rgb(127, 255, 195);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula3{
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula4{
+        background-color: rgb(255, 127, 127);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .menucelula5{
+        background-color: rgb(127, 140, 255); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .conteudo{
+        display: inline-flex;
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: rgb(246, 255, 127);
+        border: 3px solid rgb(0, 0, 0);
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .linha1{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 185, 127);
+        height: 800px;
+        width: 100%;
+        
+    }
+    .celula1{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .celula2{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-color: rgb(255, 127, 206);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .imagebox{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+    }
+    .imagebox .overlay{
+        background-color: rgba(0, 0, 0, 0.555);
+        color: aliceblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        opacity: 1;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagebox img{
+        display: block;
+        height: 350px;
+    }
+    .linha2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        background-color: rgb(255, 127, 127);
+        height: 1200px;
+        width: 100%;
+    }
+    .celula3{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-color: rgb(127, 140, 255); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .celula4{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-color: rgb(127, 255, 195);
+        border: 2px solid rgb(0, 0, 0); 
+    }
+    .celula5{
+        display: flex;
+        height: 400px;
+        width: 100%;
+        background-color: rgb(255, 236, 127); 
+        border: 2px solid rgb(0, 0, 0);
+    }
+    @keyframes cor{
+        0%{
+            background-color: rgb(255, 127, 127);
+            transform: translate(20px, 20px);
+        }
+        20%{
+            background-color: rgb(127, 140, 255);  
+        }
+        40%{
+            background-color: rgb(127, 255, 195);
+            transform: translate(calc(100vw - 420px), 20px);
+        }
+        80%{
+            background-color: rgb(255, 236, 127);
+        }
+        100%{
+            background-color: rgb(187, 127, 255);
+            transform: translate(20px, 20px);
+        }
+    }
+    .caixa-do-gato{
+        display: flex;
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(187, 127, 255);
+        border: 2px solid rgb(0, 0, 0);
+        animation-name: cor;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        position: absolute;
+        z-index: -1;
+    }
+    .caixa-do-gato img{
+        height: 280px;
+    }
+}

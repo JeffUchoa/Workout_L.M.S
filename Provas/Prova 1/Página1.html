@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .conteudo-site{
+            display: flex;
+            min-height: 100%;
+            width: 100%;
+
+        }
+        .navegador{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            background-color: rgb(255, 140, 74);
+            height: 100vh;
+            width: 25vw;
+        }
+        .botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color:rgb(253, 171, 123);
+            color: aliceblue;
+        }
+        .navegador .botao:hover{
+            background-color:  rgb(250, 207, 182);
+        }
+        .galeria{
+            display: flex;
+            background-color: rgb(250, 209, 185);
+            width: calc(100% - 20vw);
+            padding-left: 25vw;
+            min-height: 100%;
+            flex-wrap: wrap;
+        }
+        .galeria .imagem-galeria img{
+            height: 440px;
+            width:320px;
+            border-radius: 20px;
+            transition: scale 2s;
+        }
+        .imagem-galeria{
+            display: flex;
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .overlay{
+            display: flex;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.00);
+            height: 0px;
+            overflow: hidden;
+            width:0px;
+            color: aliceblue;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: width 2s , height 2s ,background-color 2s;
+        }
+        .imagem-galeria:hover .overlay{
+            height: 506px;
+            width: 368px;
+            background-color: rgba(0, 0, 0, 0.60);
+        }
+        .imagem-galeria:hover img{
+            scale: 115%;
+            
+        }
+
+        @media screen and (max-width:576px) {
+            .conteudo-site{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            .navegador{
+                display:flex;
+                position: static;
+                justify-items: center;
+                width: 100vw;
+                flex-direction: row;
+                height: auto;
+            }
+            .botao{
+                flex-grow: 1;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo-site">
+        <nav class="navegador">
+            <div class="botao">Botao</div>
+            <div class="botao">Botao</div>
+            <div class="botao">Botao</div>
+        </nav>
+        <div class="galeria">
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            <div class="imagem-galeria">
+                <img src="./bulldog.jpg" alt="">
+                <div class="overlay">Bulldog!</div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>

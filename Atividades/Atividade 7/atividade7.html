@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="formulario">
+            <h1>Quem é você?</h1>
+            <form action="">
+                Nome
+                <input id="nome" type="text">
+                <input id="enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div id="modal_criar_grupo" class="modal criar_grupo">
+        <div class="formulario">
+            <h1>Criar um novo grupo!</h1>
+            <form action="">
+                Digite o nome do novo grupo
+                <input id="nome_grupo" type="text">
+                <input id="enviar_grupo" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="layout">
+        <div class="header">
+            <h1>Cartinhas Mágicas</h1>
+            <div id="nome_header" class="name">Não tem nome :(</div>
+        </div>
+        <div class="botao" id="criar-grupo"><img src="./plus-5-256.png" height="30px" alt="">Criar Grupo</div>
+        <div id="grupos" class="grupos">
+            <div class="grupo">
+                <div class="nome_grupo"> Grupo da Aninha</div>
+                <div class="imagem_grupo"><img id="icone" src="./icone.png " alt=""></div>
+            </div>
+        </div>
+        <div class="mandar-mensagem">
+            <input id="mensagem_enviada" type="text">
+            <img  id="enviar2" src="./telelegram.png" alt="">
+        </div>
+        <div id="mensagens" class="mensagens">
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.navsup .post{
+    display: flex;
+    background-color: rgb(129, 129, 129);
+    color: aliceblue;
+    font-weight: bold;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.post img{
+    margin-right: 10px;
+}
+.navsup{
+    display: flex;
+    position: fixed;
+    height: 40px;
+    width: 100vw;
+    background-color: rgb(61, 61, 61);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.navsup img{
+    margin-left: 20px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    
+}
+.menulate{
+    position:fixed;
+    width: 0px;
+    height: 100vh;
+    background-color: rgb(129, 129, 129);
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition:  500ms;
+    z-index: 0;
+}
+.conteudo .menulate.active{
+    width: 410px;
+    transition: 500ms;
+
+}
+.conteudo .feed.active{
+    margin-left: 420px;
+    transition:  500ms;
+}
+.feed{
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: calc(100vw - 425px);
+    height: auto;
+    margin-top: 50px;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    transition:  500ms;
+}
+.navsup .function{
+    display: flex;
+    align-items: center;
+}
+.navsup button{
+    margin-right: 20px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation-name: aparecer;
+    animation-duration: 700ms;
+    align-items: center;
+    justify-content: center;
+}
+.modal.active{
+    display: flex;
+}
+.formodal{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    border-radius: 1.5%;
+    flex-direction: column;
+}
+.formodal .nome{
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(95, 95, 95);
+    margin-bottom: 20px;
+}
+input[type=text], select {
+width: 700px;
+padding: 12px 20px;
+margin: 8px 0;
+display: block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit], select {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color:rgb(95, 95, 95);
+color: aliceblue;
+width: 300px;
+padding: 12px 20px;
+margin: 8px 0;
+display: flex;
+align-self: center;
+justify-self: center;
+cursor: pointer;
+}
+.function{
+    margin-right: 30px;
+}
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.feed h2{
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.feed .post{
+    background-color: #25252580;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 40px;
+}
+.post .name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    font-size: 40px;
+}
+.post .msg{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.titulo{
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destaques{
+    /* background-color: rgb(0, 71, 138); */
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    height: auto;
+    width: auto;
+    margin-bottom: 30px;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+.destaques .nada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image-slider{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    height: 600px;
+    width: 100vw;
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin-bottom: 20px;
+    position: relative;
+}
+.image-slider .slides{
+    width: 100%;
+    
+}
+.image-slider .pra-frente{
+    display: flex;
+    position: absolute;
+    left: 92.5vw;
+    height: 600px;
+    width: 150px;
+    background-color: none;
+    transition: 500ms;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pra-frente img{
+    opacity: 0.5;
+    transition: 500ms;
+}
+.pra-frente:hover img{
+    opacity: 1;
+}
+
+.pra-frente:hover{
+    background-color: #74747450;
+    opacity: 1;
+}
+.image-slider .pra-traz{
+    display: flex;
+    position: absolute;
+    justify-self: flex-start;
+    align-self: flex-start;
+    height: 600px;
+    width: 150px;
+    background-color: none;
+    transition: 500ms;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pra-traz img{
+    opacity: 0.5;
+    transition: 500ms;
+}
+.pra-traz:hover img{
+    opacity: 1;
+}
+
+.pra-traz:hover{
+    background-color: #74747450;
+}
+.slides .slide{
+    position: absolute;
+    font-size: 80px;
+    background-color: #5a5a5a;
+    color: #ccc;
+    transform: translate(-100vw, 0);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: -3;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.image-slider .slides .slide.active{
+    transform: translate(0, 0);
+}
+
+.aparecer_esquerda{
+    animation-name: direita_aparecer;
+    animation-duration: 500ms;
+}
+.desativado{
+    width: 100%;
+    height: 600px;
+    transform: translate(0,0);
+    animation-name: esquerda;
+    animation-duration: 500ms;
+}
+.aparecer_direita{
+    animation: direita_desaparecer;
+    animation-direction: reverse;
+    animation-duration: 500ms;
+
+}
+
+/* .image-slider .active2{
+    width: 100%;
+    height: 600px;
+    transform: translate(0,0);
+    animation-name: direita;
+    animation-duration: 500ms;
+    
+} */
+
+.slides .slide.meio_esquerda{
+    animation: meio_esquerda 500ms;
+    transform: translate(-100vw, 0);
+}
+
+@keyframes meio_esquerda {
+    from{
+        transform: translate(0,0);
+    }to{
+        transform: translate(-100vw, 0);
+    }
+}
+
+.slides .slide.direita_meio{
+    animation: direita_meio 500ms ;
+    transform: translate(0px, 0px);
+}
+
+
+@keyframes direita_meio {
+    from{
+        transform: translate(100vw, 0);
+    }to{
+        transform: translate(0px, 0px);
+    }
+}
+
+.slides .slide.meio_direita{
+    animation: meio_direita 500ms;
+    transform: translate(100vw, 0);
+}
+
+@keyframes meio_direita {
+    from{
+        transform: translate(0,0);
+    }to{
+        transform: translate(100vw, 0);
+    }
+}
+
+.slides .slide.esquerda_meio{
+    animation: esquerda-meio 500ms;
+    transform: translate(0, 0);
+}
+
+@keyframes esquerda-meio {
+    from{
+        transform: translate(-100vw,0);
+    }to{
+        transform: translate(0px, 0);
+    }
+}
+
+.animation_active_primeiro{
+    animation: direita_aparecer; 
+    animation-direction: reverse;
+    animation-duration: 500ms;
+}
+
+.bolinhas .bolinha{
+    background-color: rgba(255, 255, 255, 0.507);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 500ms;
+}
+.bolinhas .bolinha.active{
+    background-color: rgb(236, 0, 0);
+}
+.bolinhas{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom:0px;
+    right: 45%;
+}
